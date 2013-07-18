@@ -1,0 +1,24 @@
+<% if can? :create, Post %>
+<div class="span3">
+  <aside class="sidebar">
+    <form class="form-search">
+      <div class="input-append">
+        <input type="text" class="span12 search-query" placeholder="Search Blog">
+        <button type="submit" class="btn"><i class="icon-search"></i></button>
+      </div>
+    </form>
+  </aside>
+  <!-- Recent Post start-->
+  <aside class="sidebar">
+    <h2 class="mostpopular">Menu</h2>
+    <div class="singlesection">
+      <%= link_to "Add new slide", new_slide_path %>
+    </div>
+    <div class="singlesection">
+      <%= link_to "Add Blog Post", new_blog_post_path %>
+    </div>
+  </aside>
+  <!-- Recent Post end-->
+</div>
+
+<% end %>

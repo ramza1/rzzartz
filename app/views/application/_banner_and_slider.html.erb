@@ -1,0 +1,36 @@
+<div id="index_page" class="row-fluid">
+  <div class="span12 topbanner_section">
+    <div class="row-fluid">
+      <!-- Logo Area Start -->
+      <div class="span12">
+        <h1><a href="#"><img src="/assets/company_logo.png" alt="logo"></a></h1>
+      </div>
+      <!-- Logo Area Start -->
+    </div>
+    <div class="row-fluid">
+      <div class="span12 banner_outer">
+        <div id="myCarousel2" class="carousel slide">
+          <!-- Slider Items Start -->
+          <div class="banner_slides">
+            <div class="row-fluid">
+              <div class="span12  span_bannercon">
+                <div class="carousel-inner">
+                  <% @slides.each do |slide| %>
+                      <div class="<% if slide == @slides.first %>active <% end %>item">
+                        <span class="image_1"><%= image_tag slide.slide_image(:bord)%></span>
+                      </div>
+                  <% end %>
+                </div>
+
+                <!-- Slider navigations Start -->
+                <a class="carousel-control left" href="#myCarousel2" data-slide="prev">&lsaquo;</a> <a class="carousel-control right" href="#myCarousel2" data-slide="next">&rsaquo;</a>
+                <!-- Slider navigations End -->
+              </div>
+            </div>
+          </div>
+          <!-- Sliding Items End -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

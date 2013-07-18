@@ -1,0 +1,13 @@
+
+<section class="post_outer">
+  <h1 class="entry-title">
+    <%= slide.name %>
+  </h1>
+  <div class="post-content">
+    <p><%= image_tag slide.slide_image(:bord)%></p>
+    <p>
+      <%= link_to "Edit", edit_slide_path(slide) %> | <%= link_to "Delete", slide, method: :delete, data: {confirm: "Are you sure"} %>
+    </p>
+
+  </div>
+</section>

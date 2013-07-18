@@ -1,0 +1,6 @@
+<% if @message.valid? %>
+alert('Thank for contacting us');
+$("#new_message")[0].reset();
+<% else %>
+alert("<%= raw j @message.errors.full_messages.to_sentence %>");
+<% end %>

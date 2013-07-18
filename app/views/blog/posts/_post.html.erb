@@ -1,0 +1,34 @@
+<section class="post_outer">
+  <article>
+    <header>
+      <h1 class="entry-title"><a rel="bookmark" title="Maecenas vestibulum faucibus enim vel gravida" href="<%= url_for blog_post_path(post) %>"><%= post.title %></a> </h1>
+    </header>
+    <div class="entry-content">
+      <div class="row-fluid">
+        <div class="span12">
+          <% if post.post_image.present? %>
+          <div class="post-image">
+            <p>
+              <%= link_to image_tag(post.post_image), blog_post_path(post), class: "alignnone size-full wp-image-4" %></p>
+          </div>
+          <% end %>
+          <div class="post-date">
+            <div class="single_dateouter">
+              <p>
+                <label><%= post.created_at.day %></label>
+                <span><%= MONTH[post.created_at.month-1]%></span></p>
+            </div>
+          </div>
+          <div class="post-content">
+           <%= raw post.body %>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="post-footer">
+      <p>
+        <%= link_to "Edit", edit_blog_post_path(post) %> | <%= link_to "Delete", blog_post_path(post), method: :delete, data: {confirm: "Are you sure"} %>
+      </p>
+    </footer>
+  </article>
+</section>

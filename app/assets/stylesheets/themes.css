@@ -1,0 +1,75 @@
+/* CC FRAME UNDER CONSTRUCTION THEME */
+
+.theme_changer {
+	padding:0 10px 0 0;
+	margin:0 0 0 0;
+	width:160px;
+	height:40px;
+	top:7px;
+	left:-120px;
+	-moz-border-radius:0 9px 9px 0;
+	border-radius:0 9px 9px 0;
+	position: fixed;
+	z-index:1000000;
+}
+.theme_icon {
+	padding:7px 0 0 0;
+	margin:0 0 0 0;
+	width:26px;
+	height:26px;
+	float:right;
+	font-size:22px;
+}
+.theme_icon a {
+	padding:5px 0 0 0;
+	display:block;
+	width:26px;
+	height:26px;
+	color:#999999;
+	text-decoration:none;
+}
+.theme_icon a:hover {
+	display:block;
+	width:26px;
+	height:26px;
+	color:#fff;
+	text-decoration:none;
+}
+.theme_colors {
+	padding:0 0 0 0;
+	margin:0 0 0 0;
+	width:130px;
+	float:left;
+}
+.theme_colors ul {
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+.theme_colors ul li {
+	padding:10px 0 0 10px;
+	margin:0;
+	float:left;
+}
+.theme_colors ul li a {
+	width:20px;
+	height:20px;
+	float:left;
+	display:block;
+	background:#fff;
+}
+.theme_colors ul li a:hover {
+	text-decoration:none;
+}
+.theme_colors ul li a.blue {
+	background:#5cb8e6;
+}
+.theme_colors ul li a.orange {
+	background:#fe5e00;
+}
+.theme_colors ul li a.red {
+	background:#f07057;
+}
+.theme_colors ul li a.gray {
+	background:#283238;
+}

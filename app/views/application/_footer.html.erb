@@ -1,0 +1,103 @@
+<div id="contact_page" class="row-fluid">
+  <div class="span12 contact_section_outer">
+
+    <!-- Contact form Start -->
+    <div class="contact_outer">
+      <h3><span>Reach Us</span></h3>
+      <div class="row-fluid">
+        <div class="span8 main_formouter">
+          <%= form_for Message.new, remote: true do |f| %>
+            <div class="contact_message"></div>
+            <div class="row-fluid contact_formouter">
+              <div class="span6">
+                <%= f.text_field :name, placeholder: "Name (Required)", class: "input-xlarge" %>
+              </div>
+              <div class="span6">
+                <%= f.email_field :email, placeholder: "Email (Required)", class: "input-xlarge" %>
+              </div>
+            </div>
+            <div class="row-fluid contact_formouter">
+              <div class="span6">
+                <%= f.phone_field :phone_number, placeholder: "Phone Number", class: "input-xlarge" %>
+              </div>
+              <div class="span6">
+                <%= f.text_field :subject, placeholder: "Subject (Required)", class: "input-xlarge" %>
+              </div>
+            </div>
+            <div class="row-fluid contact_formouter">
+              <div class="span12">
+                <%= f.text_area :content, placeholder: "Message (Required)", class: "input-xlarge", rows: 3, style: "height: 100px;" %>
+              </div>
+            </div>
+            <div class="row-fluid contact_formouter">
+              <div class="span12">
+                <button class="btn btn-inverse" type="submit">Submit</button>
+              </div>
+            </div>
+          <% end %>
+        </div>
+        <div class="span4 contact_right">
+          <!-- Call Us -->
+          <div class="contact_single">
+            <div class="contact_single_left">
+              <div class="contact_single_iconouter"><span class="icon-phone"></span></div>
+            </div>
+            <div class="contact_single_right">
+              <h5>Call Us</h5>
+              <p>+2348163453879<br>
+                +2348163453879</p>
+            </div>
+          </div>
+          <!-- Call Us -->
+          <!-- Email Address -->
+          <div class="contact_single">
+            <div class="contact_single_left">
+              <div class="contact_single_iconouter"><span class="icon-envelope"></span></div>
+            </div>
+            <div class="contact_single_right">
+              <h5>Email Addresses</h5>
+              <p><a href="#">rzaartz@gmail.com</a><br>
+                <a href="#">rzaartz@yahoo.com</a></p>
+            </div>
+          </div>
+          <!-- Email Address -->
+          <!-- 24x7 Support -->
+          <div class="contact_single">
+            <div class="contact_single_left">
+              <div class="contact_single_iconouter"><span class="icon-cogs"></span></div>
+            </div>
+            <div class="contact_single_right">
+              <h5>24x7 Support</h5>
+              <p>Support centre</p>
+            </div>
+          </div>
+          <!-- 24x7 Support -->
+        </div>
+      </div>
+    </div>
+    <!-- Contact form End -->
+  </div>
+</div>
+<!-- Reach Us End -->
+
+
+<!-- Footer Copyright start -->
+<div class="row-fluid">
+  <div class="span12 copyright_section_outer">
+    <div class="copyright_outer">
+      <div class="row-fluid">
+        <div class="span4"><a href="#"><img src="/assets/footer_logo.png" alt="Logo"></a></div>
+        <div class="span4 social_icons">
+          <ul>
+            <li><a href="#"><span class="icon-facebook"></span></a></li>
+            <li><a href="#"><span class="icon-twitter"></span></a></li>
+            <li><a href="#"><span class="icon-google-plus"></span></a></li>
+          </ul>
+        </div>
+        <div class="span4 copyright">
+          <p>Rzaartz Ltd | RC No: 980521 </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

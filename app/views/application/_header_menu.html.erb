@@ -1,0 +1,33 @@
+<div class="row-fluid">
+  <div class="span12">
+    <header class="header">
+      <!-- Top Navigation Start -->
+      <div class="nav">
+        <div class="mobile-nav"></div>
+        <ul class="primary">
+          <% if controller_name == "welcome" %>
+          <li id="section_1" class="current"><a href="#index_page" id="1">Home</a></li>
+          <li id="section_2" class="" ><a href="#about_page" id="2">About Us</a></li>
+          <li id="section_3" class="" ><a href="#service_page" id="3">Services</a></li>
+          <li id="section_4" class="" ><a href="#work_page" id="4">Our Works</a></li>
+          <li id="section_5" class="" ><a href="#contact_page" id="5">Reach Us</a></li>
+          <% else %>
+              <li id="section_1"><a href="<%= url_for root_url %>#index_page" id="1">Home</a></li>
+              <li id="section_2" class="" ><a href="<%= url_for root_url %>#about_page" id="2">About Us</a></li>
+              <li id="section_3" class="" ><a href="<%= url_for root_url %>#service_page" id="3">Services</a></li>
+              <li id="section_4" class="" ><a href="<%= url_for root_url %>#work_page" id="4">Our Works</a></li>
+              <li id="section_5" class="" ><a href="<%= url_for root_url %>#contact_page" id="5">Reach Us</a></li>
+          <% end %>
+          <li><a class="has-drop">Blog</a>
+            <ul class="drop">
+              <li class="current"><%= link_to "Blog", blog_root_url %></li>
+            </ul>
+          </li>
+
+        </ul>
+        <div class="clear"></div>
+      </div>
+      <!-- Top Navigation End -->
+    </header>
+  </div>
+</div>

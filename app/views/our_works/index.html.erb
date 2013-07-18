@@ -1,0 +1,21 @@
+<h1>Listing our_works</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @our_works.each do |our_work| %>
+  <tr>
+    <td><%= link_to 'Show', our_work %></td>
+    <td><%= link_to 'Edit', edit_our_work_path(our_work) %></td>
+    <td><%= link_to 'Destroy', our_work, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Our work', new_our_work_path %>

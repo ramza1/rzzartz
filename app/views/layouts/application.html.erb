@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!-- Viewport Metatag -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- Scripts -->
+
+  <%= stylesheet_link_tag "application" %>
+  <%= javascript_include_tag "application" %>
+
+
+  <!-- Theme Cahanger -->
+
+
+  <!-- Contact Validation -->
+
+  <script type="text/javascript">
+      $('.carousel').carousel({
+          interval: 2000
+      })
+  </script>
+
+
+  <!-- Theme Stylesheet -->
+
+
+
+  <title>Rzaartz</title>
+
+</head>
+<body>
+<!-- Header Section Start -->
+<%= render "header_menu" %>
+
+<%= yield %>
+
+<%= render "footer" %>
+
+
+</body>
+</html>

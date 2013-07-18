@@ -1,0 +1,210 @@
+.clear { 
+	clear:both;
+}
+.nav {
+	display:block;
+	width:100%; 
+	margin-bottom:0;
+}
+.mobile-nav {
+	visibility: hidden;
+	padding: 0;
+	height: 0px;
+}
+ul.primary {
+	list-style: none;
+	height: 45px;
+	width:100%;
+	position: relative;
+	margin: 0px 0 0 0;
+	padding:0 0 0 0;
+	float: right;
+	text-align:center;
+}
+ul.primary li {
+    display: inline-block;
+    list-style: none outside none;
+    margin: 0;
+    max-height: 55px;
+    padding: 0 5px;
+    width: auto;
+}
+ul.primary li a, ul.drop li a {
+	color: #330000;
+    display: inline-block;
+    font: 'ubuntu';
+    font-size: 1em;
+    line-height: 55px;
+    margin: 0;
+    max-height: 55px;
+    padding: 0 10px;
+    text-align: center;
+    text-decoration: none;
+    width: auto;
+	font-weight:normal;
+}
+ul.drop li a {
+	padding: 5px; line-height:26px;
+}
+ul.primary li a:hover, ul.drop li a:hover {
+    text-decoration: none;
+}
+ul.primary li.current  > a {
+    text-decoration: none;
+}
+a.has-drop {
+	cursor: pointer;
+	position:relative;
+}
+a.has-drop span {
+	font-size:14px;
+	line-height:20px;
+	margin:0;
+	display:block;
+}
+li.active > a.has-drop span {
+	margin: -8px 0 0 5px;
+	width: 10px;
+	height: 5px;
+	float: right;
+	background: url("drop-caret-up.png") no-repeat center right;
+}
+ul.drop {
+	display: none;
+	z-index: 999;
+	position: absolute;
+	margin: 0;
+	padding:5px;
+	padding-top:1px;
+	width: auto;
+	list-style: none;
+	border: none;
+	-webkit-box-sizing: none !important;
+	-moz-box-sizing: none !important;
+	box-sizing: none !important;
+}
+ul.drop::before {
+	-webkit-box-sizing: none;
+	-moz-box-sizing: none;
+	box-sizing: none;
+}
+ul.drop::after {
+	-webkit-box-sizing: none;
+	-moz-box-sizing: none;
+	box-sizing: none;  
+}
+ul.drop * {
+	-webkit-box-sizing: none !important;
+	-moz-box-sizing: none !important;
+	box-sizing: none !important;  
+}
+ul.drop li {
+    float: none;
+	margin:0 0 1px 0;
+	display: block;
+    font-size: 13px;
+	background: #f1c809;
+    max-width: 100%;
+    font-weight: normal;
+}
+ul.drop {
+	margin-top:8px;
+}
+ul.drop:after, ul.drop:before{
+	border: solid transparent;
+	content: ' ';
+	height: auto;
+	right:100%;
+	position: absolute;
+	width: 0;
+	top: -15px;
+	left:20px;
+	border-width: 8px;
+	border-bottom-color:#000000;
+}
+
+
+@media only screen and (max-width: 767px) {
+nav {
+	display: block;
+	width: 100%;
+	border: 0px solid white;
+	padding: 10px 0;
+}
+.mobile-nav {
+	visibility: visible;
+	height: auto;
+	margin:16px 10px 0 0;
+	padding: 10px 0;
+	font-weight: bold;
+	color: white;
+	cursor: pointer;
+	background: url("mobile-nav.png") no-repeat center right;
+}
+
+ul.primary {
+	float: none;
+	display: none;
+	height: auto;
+	margin: 0;
+	padding: 0;
+}
+
+ul.primary li {
+    display: block;
+    float: left;
+    border-bottom: 1px solid #444;
+	width:100%;
+	max-height:none;
+	padding:0;
+}
+
+ul.primary li a {
+	line-height:40px;
+}
+ul.primary li:last-child {
+	border-bottom: none;
+}
+ul.drop li, ul.primary li.active {
+	border-bottom: none;
+}
+ul.drop li a {
+	font-family: 'Rokkitt',serif;
+	font-size: 1.2em;
+	max-height:none;
+	line-height:22px;
+}
+a.has-drop span {
+	margin: 5px 0 0 5px;
+	width: 10px;
+	height: 5px;
+	float: right;
+	background: url("drop-caret.png") no-repeat center right;
+}
+
+li.active > a.has-drop span {
+	margin: 5px 0 0 5px;
+	width: 10px;
+	height: 5px;
+	float: right;
+	background: url("drop-caret-up.png") no-repeat center right;
+}
+ul.drop {
+	position:inherit;
+	height:auto;
+	text-align:center;
+	margin:0px;
+	padding:0;
+}
+ul.drop li {
+	float:left;
+	display:inline-table;
+	width:100%;
+	max-width:none;
+	margin:0px;
+	border-top:1px solid #444444;
+	background:rgb(163, 20, 20);
+	color:#f1c809;
+}
+
+}   ​
